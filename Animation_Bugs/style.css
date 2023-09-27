@@ -1,0 +1,253 @@
+html {
+    box-sizing: border-box;
+    background: url(images/backCode.PNG) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.bug1 {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    animation-name: crawl1;
+    animation-duration: 8s;                    /* movement speed of the bug */
+    animation-timing-function: linear;      
+    animation-delay: 0s;                        /* start of animation after... */
+    animation-iteration-count: infinite;        /* infinite */
+    animation-direction: forwards;              /* standard forward only in one direction */
+    transform: rotateZ(120deg);                 /* rotates the image*/ 
+    opacity: 0.01;                              /* makes invisible to the beginning and to the end */ 
+}
+
+  @keyframes crawl1  {
+    0%   {
+        left: 0px;                               /* start of the diagonal course in the upper left corner in the container */
+        top: 0px;
+        transform: translate(0px, 0px) rotateZ(120deg);  /* diagonal course  */
+        opacity: 1;                             /* makes image appear slow */ 
+    } 
+    100% {
+        left: 400px;                             /* end of the diagonal course in the lower right corner of the container */
+        top: 300px; 
+        transform: translate(500px, 180px) rotateZ(120deg);
+        opacity: 00.5;                           /* makes image slowly disappear */
+    } 
+  }
+
+  .fa-spider {
+    font-size: 9rem;
+    color: #000;
+    text-shadow: 0 0 0.6rem #a3002e, 0 0 1.5rem #700020,
+    -0.2rem 0.1rem 1rem #700020, 0.2rem 0.1rem 1rem #700020,
+    0 -0.5rem 2rem #510017, 0 0.5rem 3rem #510017;
+    position: relative;
+    animation-name: crawlSp;
+    animation-duration: 12s;                    /* movement speed of the bug */
+    animation-timing-function: linear;      
+    animation-delay: 6s;                        /* start of animation after... */
+    animation-iteration-count: 1;        /* infinite */
+    animation-direction: forwards;              /* standard forward only in one direction */
+    transform: rotateZ(120deg);                 /* rotates the image*/ 
+    opacity: 0.01;                              /* makes invisible to the beginning and to the end */ 
+}
+
+  @keyframes crawlSp  {
+    0%   {
+        left: 100px;                               /* start of the diagonal course in the upper left corner in the container */
+        top: 200px;
+        transform: translate(0px, 0px) rotateZ(120deg);  /* diagonal course  */
+        opacity: 1;                             /* makes image appear slow */ 
+    } 
+    100% {
+        left: 300px;                             /* end of the diagonal course in the lower right corner of the container */
+        top: 250px; 
+        transform: translate(500px, 180px) rotateZ(120deg);
+        opacity: 0;                           /* makes image slowly disappear */
+    } 
+  }
+
+
+.bug2 {
+    font-size: 2rem;
+    position: relative;
+    animation-name: crawl2;
+    animation-duration: 5s;                 
+    animation-timing-function: linear;      
+    animation-delay: 0s;                    
+    animation-iteration-count: infinite;         
+    animation-direction: forwards;         
+    transform: rotateZ(60deg);             
+    opacity: 0.01;                       
+}
+
+  @keyframes crawl2  {
+    0%   {
+        color: greenyellow; 
+        text-shadow: 0 0 0.6rem #f1ffe6, 0 0 1.5rem #bbff8b,
+        -0.2rem 0.1rem 1rem #bbff8b, 0.2rem 0.1rem 1rem #bbff8b,
+        0 -0.5rem 2rem #70c438, 0 0.5rem 3rem #70c438;
+        left: 0px;                   
+        top: 350px;
+        transform: translate(0px, 0px) rotateZ(60deg); 
+        opacity: 1;                        
+    } 
+    100% {
+        color: lightgreen; 
+        text-shadow: 0 0 0.6rem #f1ffe6, 0 0 1.5rem #bbff8b,
+        -0.2rem 0.1rem 1rem #bbff8b, 0.2rem 0.1rem 1rem #bbff8b,
+        0 -0.5rem 2rem #72e425, 0 0.5rem 3rem #72e425;
+        left: 550px; 
+        top: 0px; 
+        transform: translate(450px, 100px) rotateZ(60deg);
+        opacity: 1; 
+    } 
+  }
+
+
+.bug3 {
+    font-size: 3rem;
+    position: relative;
+    animation-name: crawl3;
+    animation-duration: 10s;  
+    animation-timing-function: linear;  
+    animation-delay: 0s;                  
+    animation-iteration-count: 1;          
+    animation-direction: reverse; 
+    transform: rotateZ(120deg); 
+    opacity: 0.01;
+}
+
+  @keyframes crawl3  {
+    0%   {
+        color: red; 
+        left: 0px; 
+        top: 100px;
+        transform: translate(0px, 0px) rotateZ(280deg); 
+        opacity: 0; 
+    }  
+    25%  {
+        color:yellow; 
+        left: 200px; 
+        top: 100px;
+        transform: translate(40px, 40px) rotateZ(280deg);
+        opacity: 0;
+    }
+    50%  {
+        color:green; 
+        left: 400px; 
+        top: 80px;
+        transform: translate(60px, 60px) rotateZ(260deg);
+        opacity: 0.5;
+    }
+    75%  {
+        color:blue; 
+        left: 500px; 
+        top: 60px;
+        transform: translate(80px, 80px) rotateZ(270deg);
+        opacity: 1;
+    }
+    100% {
+        color: blueviolet; 
+        left: 550px;  
+        top: 0px; 
+        transform: translate(450px, 100px) rotateZ(260deg);
+        opacity: 0.7;  
+    } 
+  }
+
+
+.bug4 {
+    font-size: 2.5rem;
+    position: relative;
+    animation-name: crawl4;
+    animation-duration: 7s;                 
+    animation-timing-function: linear;      
+    animation-delay: 0s;                    
+    animation-iteration-count: infinite;         
+    animation-direction: reverse;                         
+    transform: rotateZ(260deg);             
+    opacity: 0.01;  
+  } 
+
+  @keyframes crawl4  {
+    0%   {
+        color: deeppink; 
+        left: 0px;                   
+        top: 300px;
+        transform: translate(0px, 0px) rotateZ(290deg); 
+        opacity: 1;                        
+    } 
+    100% {
+        color: pink; 
+        left: 450px; 
+        top: 350px; 
+        transform: translate(450px, 100px) rotateZ(270deg);
+        opacity: 1; 
+    }       
+  }
+
+
+.bug5 {
+    font-size: 1.5rem;
+    position: relative;
+    animation-name: crawl5;
+    animation-duration: 3s;                 
+    animation-timing-function: linear;      
+    animation-delay: 10s;                    
+    animation-iteration-count: 1;         
+    animation-direction: reverse;                        
+    transform: rotateZ(330deg);             
+    opacity: 0.01;  
+  } 
+
+  @keyframes crawl5  {
+    0%   {
+        color: yellow; 
+        left: 600px;                   
+        top: 300px;
+        transform: translate(0px, 0px) rotateZ(330deg); 
+        opacity: 0.5;                        
+    } 
+    100% {
+        color: gold; 
+        left: 220px; 
+        top: 350px; 
+        transform: translate(450px, 100px) rotateZ(330deg);
+        opacity: 1; 
+    }       
+  }
+
+
+
+.bug6 {
+    font-size: 1.5rem;
+    position: relative;
+    animation-name: crawl6;
+    animation-duration: 7s;                 
+    animation-timing-function: linear;      
+    animation-delay: 2s;                    
+    animation-iteration-count: infinite;         
+    animation-direction: normal;                        
+    transform: rotateZ(120deg);             
+    opacity: 0.01;  
+  } 
+
+  @keyframes crawl6  {
+    0%   {
+        color: darkturquoise; 
+        left: 200px;                   
+        top: -100px;
+        transform: translate(0px, 0px) rotateZ(120deg); 
+        opacity: 1;                        
+    } 
+    100% {
+        color: aquamarine; 
+        left: 400px; 
+        top: 250px; 
+        transform: translate(450px, 100px) rotateZ(120deg);
+        opacity: 0.7; 
+    }       
+  }
