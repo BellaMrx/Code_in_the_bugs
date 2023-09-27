@@ -5,4 +5,4 @@
 Copy the files and open index.html in your browser... but be careful bugs ;)
 
 
- <img src="images/PreviewBugs.png" alt="Preview" width="400"/>
+ ![Preview](images/PreviewBugs.png)
